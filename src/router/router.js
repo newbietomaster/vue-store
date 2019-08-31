@@ -21,6 +21,11 @@ export default [
     component: () => import('@/views/login.vue')
   },
   {
+    path: '/count',
+    name: 'count',
+    component: () => import('@/views/count_to.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting
@@ -50,6 +55,16 @@ export default [
         component: () => import('@/views/child.vue')
       }
     ]
+  },
+  {
+    path: '/store',
+    name: 'store',
+    component: () => import('@/views/store.vue')
+  },
+  {
+    path: '/and',
+    name: 'and',
+    component: () => import('@/views/and.vue')
   },
   {
     //命名视图的加载方式：default为默认视图加载
